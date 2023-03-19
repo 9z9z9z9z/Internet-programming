@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:large;
+    font-style: italic;
+    font-weight: bold;
+}
+.first_col {
+    background-color:darkgray;
+}
+.second_col {
+    background-color:darkkhaki;
+}
+.third_col {
+    background-color:darkcyan;
+}
