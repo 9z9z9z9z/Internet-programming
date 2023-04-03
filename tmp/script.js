@@ -50,13 +50,10 @@ $(document).ready(function() {
         }
     });
 
-    $("form").on("Change keyup input click", "input[type='text']", function() {
+    $(document).on("Change keyup input click", "input[type='num']", function() {
         if(this.value.match(/[^0-9]/g)) {
             this.value = this.value.replace(/[^0-9]/g, "");
-        } else {
-            errorPlacement();
-        }
-        ;
+        };
     });
     $("form input[type='text']").on('focusout', function() {
         $(this).tooltipster('close');
