@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    
     // Инициализация плагина jQuery Validation Plugin
     $("form").validate({
         errorPlacement: function(error, element) {
@@ -9,7 +10,7 @@ $(document).ready(function() {
                     onlyOne: false, // разрешить несколько окон
                     position: 'left',
                     animation: 'grow', 
-                    theme: ['tooltipster-noir'] // выбор темы
+                    theme: 'tooltipster-punk' // выбор темы
                 });
                 $(element).tooltipster('open'); // открыть окно
             }
@@ -37,12 +38,12 @@ $(document).ready(function() {
         },
 
         messages: {
-            number: {
-                required: "Please, enter your number:",
+            onlynumber: {
+                required: "Please, input your number",
                 pattern: "Yuor number can consider only numbers"
             },
             textarea: {
-                required: "Please, enter some your thoushts:"
+                required: "Please enter at least 20 characters"
             },
             radio: {
                 required: "Please, choose first position"
@@ -118,7 +119,6 @@ $(document).ready(function() {
             $('#radio-field input[type="radio"]').eq(2).prop('checked', false);
         }
     }
-      
     $(document).ready(function() {
         loadFormData();
         console.log(localStorage);
