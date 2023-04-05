@@ -1,5 +1,7 @@
 $(document).ready(function() {
-    
+    jQuery.validator.addMethod("numbersonly", function(value, element) {
+        return this.optional(element) || /^\d+$/.test(value);
+        }, "Пожалуйста, введите только цифры.");
     // Инициализация плагина jQuery Validation Plugin
     jQuery("form").validate({
         errorPlacement: function(error, element) {
@@ -25,6 +27,7 @@ $(document).ready(function() {
 
         rules: {
             onlynumber: {
+                numbersonly: true,
                 required: true,
             },
             textarea: {
@@ -39,7 +42,8 @@ $(document).ready(function() {
 
         messages: {
             onlynumber: {
-                required: "Please, input your number",
+                numbersonly: "Input numbers!",
+                required: "Please, input your number"
             },
             textarea: {
                 required: "Please enter at least 20 characters"
@@ -52,11 +56,11 @@ $(document).ready(function() {
     $("form input[type='text']").on('focusout', function() {
         $(this).tooltipster('close');
     });
-    jQuery(document).on("Change keyup input click", "input[type='text']", function() {
-        if(this.value.match(/[^0-9]/g)) {
-            this.value = this.value.replace(/[^0-9]/g, "");
-        };
-    });
+    // jQuery(document).on("Change keyup input click", "input[type='text']", function() {
+    //     if(this.value.match(/[^0-9]/g)) {
+    //         this.value = this.value.replace(/[^0-9]/g, "");
+    //     };
+    // });
 
     // Сохранение введенных данных в полях с помощью хранилища LocalStorage
     jQuery('input, radio, text').each(function() {
