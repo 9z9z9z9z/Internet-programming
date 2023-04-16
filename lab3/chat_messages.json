@@ -1,0 +1,34 @@
+{
+  "users": [
+    "Emil",
+    "Kolya"
+  ],
+  "messages": [
+    {
+      "id": 0,
+      "author": "Emil",
+      "message": "Hi!"
+    },
+    {
+      "id": 1,
+      "author": "Kolya",
+      "message": "Hi, how do you do?"
+    },
+    {
+      "id": 2,
+      "author": "Emil",
+      "message": "I'm ok, how about you?"
+    },
+    {
+      "id": 3,
+      "author": "Kolya",
+      "message": "I'm ok too"
+    },
+    {
+      "id": 4,
+      "author": "Kolya",
+      "time": "22:33:41",
+      "message": "What about the labs?"
+    }
+  ]
+}

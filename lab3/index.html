@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        <link rel="stylesheet" href="style.css"/>
+        <title> Chat </title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1 class="title"> noGPT Chat </h1>
+                <div class="user">
+                    <input type="text" placeholder="Enter your name" class="input-name"/>
+                    <button class="btn-login">
+                        <i class="material-icons"> send </i>
+                    </button>
+                </div>
+            </div>
+            <div class="chat">
+                <div class="chat-list"></div>
+                <div class="chat-input">
+                    <div class="input-group">
+                        <input type="text" placeholder="Enter your message" class="input-message" />
+                        <button class="btn-send">
+                            <div class="material-icons"> send </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="client_part.js"></script>
+    </body>
+</html>
