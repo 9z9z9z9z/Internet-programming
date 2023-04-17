@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Lab2 maket </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.js"> </script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/4.2.8/css/tooltipster.bundle.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/4.2.8/js/tooltipster.bundle.js"> </script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="left-column">
+        <form id="form">
+          <label for="number"> Number: </label>
+          <input type="text" id="onlynumber" name="onlynumber">
+          <br>
+          <label for="textarea"> Input your symblos: </label>
+          <textarea type="textarea" id="textarea" name="textarea"> </textarea>
+          <br>
+            <div>
+              <div id="radioPlace">
+                <div>
+                  <input type="radio" id="radio1" name="radiofield" value="1" required="true"> 
+                  <label for="radio1"> Part 1 </label>
+                </div>
+                <div>
+                <input type="radio" id="radio2" name="radiofield" value="2" > 
+                <label for="radio2"> Part 2 </label>
+                </div>
+                <div>
+                <input type="radio" id="radio3" name="radiofield" value="3" > 
+                <label for="radio3"> Part 3 </label>
+                </div>
+              </div>
+            </div>
+          <br>
+          <input type="submit" value="Done" id="myButton" name="myButton" class="mybutton">
+        </form>
+      </div>
+      <div class="center-column"></div>
+      <div class="right-column"></div>
+    </div>
+  </body>
+</html>
