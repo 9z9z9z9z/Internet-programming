@@ -1,24 +1,23 @@
+var myButton = document.querySelector(".mybutton");
+
 $(document).ready(function() {
     jQuery.validator.addMethod("numbersonly", function(value, element) {
         return this.optional(element) || /^\d+$/.test(value);
         }, "Пожалуйста, введите только цифры.");
-    // Инициализация плагина jQuery Validation Plugin
     jQuery("form").validate({
         errorPlacement: function(error, element) {
-            // показываем ошибку всплывающим окном
             if (error[0].innerHTML != null && error[0].innerHTML !== "") {
-                $(element).tooltipster( { // инициализация Tooltipster
+                $(element).tooltipster( { 
                     content: $(error).text(),
-                    onlyOne: false, // разрешить несколько окон
+                    onlyOne: false, 
                     position: 'left',
                     animation: 'grow', 
-                    theme: 'tooltipster-punk' // выбор темы
+                    theme: 'tooltipster-punk' 
                 });
-                $(element).tooltipster('open'); // открыть окно
+                $(element).tooltipster('open'); 
             }
         },
         success: function(element) {
-            // скрываем всплывающее окно при успешной валидации
             var obj = $(element);
             if (obj.hasClass('tooltipstered') && obj.hasClass('error')) {
                 $(element).tooltipster('close');
@@ -49,23 +48,17 @@ $(document).ready(function() {
                 required: "Please enter at least 20 characters"
             },
             radio: {
-                required: "Please, choose first position"
+                required: "Please, choose one position"
             }
         }
     });
-    $("form input[type='text']").on('focusout', function() {
-        $(this).tooltipster('close');
-    });
-
     // Сохранение введенных данных в полях с помощью хранилища LocalStorage
     jQuery('input, radio, text').each(function() {
         var number = $(this).attr('id');
         var value = localStorage.getItem(number);
         if (value !== null) {
-            if ($(this).is(':radio')) {
-                $('input[name="radio"]').prop('checked', false);
+            if ($(this).attr('id') === 'radio') {
                 $(this).prop('checked','true');
-
             } else {
                 $(this).val(value);
             }
@@ -77,6 +70,9 @@ $(document).ready(function() {
             } else {
                 value = $(this).val();
             }
+            localStorage.removeItem('radio1');
+            localStorage.removeItem('radio2');
+            localStorage.removeItem('radio3');
             localStorage.setItem(number, value);
             localStorage.setItem('textarea', textarea.value);
         });
@@ -86,40 +82,33 @@ $(document).ready(function() {
     function loadFormData() {
 
         // Загрузка number поля
-        var numberFieldValue = localStorage.getItem('onlynumber');
+        let numberFieldValue = localStorage.getItem('onlynumber');
         if (numberFieldValue !== null) {
             $('#onlynumber').val(numberFieldValue);
         }
         // Загрузка значения текствого поля
-        var textFieldValue = localStorage.getItem('textarea');
+        let textFieldValue = localStorage.getItem('textarea');
         if (textFieldValue !== null) {
             $('#textarea').val(textFieldValue);
         }
       
-        // Загрузка значения radio поля
-        var radioFieldValue = localStorage.getItem('radio-field');
-        if (radioFieldValue !== null) {
-            $('#radio-field').val(radioFieldValue);
-        }
-      
         // Загрузка значения radio полей
-        var firstRadioValue = localStorage.getItem('radio1');
+        let firstRadioValue = localStorage.getItem('radio1');
         if (firstRadioValue !== null) {
-            $('#radio-field input[type="radio"]').eq(0).prop('checked', (firstRadioValue === 'true'));
+            $('#radio1').attr('checked',true);
+            console.log("firstRadioValue");
         }
       
-        var secondRadioValue = localStorage.getItem('radio2');
+        let secondRadioValue = localStorage.getItem('radio2');
         if (secondRadioValue !== null) {
-            $('#radio-field input[type="radio"]').eq(1).prop('checked', (secondRadioValue === 'true'));
-        } else {
-            $('#radio-field input[type="radio"]').eq(1).prop('checked', false);
+            $('#radio2').attr('checked',true);
+            console.log("secondRadioValue");
         }
       
-        var thirdRadioValue = localStorage.getItem('radio3');
+        let thirdRadioValue = localStorage.getItem('radio3');
         if (thirdRadioValue !== null) {
-            $('#radio-field input[type="radio"]').eq(2).prop('checked', (thirdRadioValue === 'true'));
-        } else {
-            $('#radio-field input[type="radio"]').eq(2).prop('checked', false);
+            $('#radio3').attr('checked',true);
+            console.log("thirdRadioValue");
         }
     }
     $(document).ready(function() {
