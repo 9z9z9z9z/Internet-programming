@@ -1,0 +1,30 @@
+{
+    "header": {
+        "date_create": "07.05.2020",
+        "date_update": "07.05.2020",
+        "author": "aam",
+        "increment": 3
+    },
+    "body": {
+        "mail_1": {
+            "datatime": "07.05.2020 10:15:15",
+            "subject": "Первое",
+            "from": "andymailru@mail.ru",
+            "message": "Первая проверка"
+        },
+        "mail_2": {
+            "datatime": "07.05.2020 10:15:15",
+            "subject": "Второе",
+            "from": "andymailru@mail.ru",
+            "message": "Вторая проверка",
+            "files": {}
+        },
+        "mail_3": {
+            "datatime": "07.05.2020 10:20:15",
+            "subject": "Третье",
+            "from": "andymailru@mail.ru",
+            "message": "Третья проверка",
+            "files": {}
+        }
+    }
+}
