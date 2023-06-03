@@ -1,1 +1,266 @@
-[{"name": "Java", "year": "2012", "quarter": "2", "count": "7470"}, {"name": "Java", "year": "2012", "quarter": "3", "count": "8966"}, {"name": "Java", "year": "2012", "quarter": "4", "count": "11616"}, {"name": "Java", "year": "2013", "quarter": "1", "count": "17892"}, {"name": "Java", "year": "2013", "quarter": "2", "count": "18723"}, {"name": "Java", "year": "2013", "quarter": "3", "count": "22997"}, {"name": "Java", "year": "2013", "quarter": "4", "count": "30341"}, {"name": "Java", "year": "2014", "quarter": "1", "count": "36813"}, {"name": "Java", "year": "2014", "quarter": "2", "count": "44287"}, {"name": "Java", "year": "2014", "quarter": "3", "count": "50281"}, {"name": "Java", "year": "2014", "quarter": "4", "count": "58614"}, {"name": "Java", "year": "2015", "quarter": "1", "count": "82070"}, {"name": "Java", "year": "2015", "quarter": "2", "count": "102051"}, {"name": "Java", "year": "2015", "quarter": "3", "count": "110575"}, {"name": "Java", "year": "2015", "quarter": "4", "count": "125231"}, {"name": "Java", "year": "2016", "quarter": "1", "count": "142492"}, {"name": "Java", "year": "2016", "quarter": "2", "count": "147825"}, {"name": "Java", "year": "2016", "quarter": "3", "count": "134356"}, {"name": "Java", "year": "2016", "quarter": "4", "count": "151448"}, {"name": "Java", "year": "2017", "quarter": "1", "count": "163323"}, {"name": "Java", "year": "2017", "quarter": "2", "count": "162469"}, {"name": "Java", "year": "2017", "quarter": "3", "count": "144980"}, {"name": "Java", "year": "2017", "quarter": "4", "count": "146973"}, {"name": "Java", "year": "2018", "quarter": "1", "count": "120206"}, {"name": "Java", "year": "2018", "quarter": "2", "count": "97052"}, {"name": "Java", "year": "2018", "quarter": "3", "count": "93971"}, {"name": "Java", "year": "2018", "quarter": "4", "count": "91632"}, {"name": "Java", "year": "2019", "quarter": "1", "count": "100654"}, {"name": "Java", "year": "2019", "quarter": "2", "count": "103978"}, {"name": "Java", "year": "2019", "quarter": "3", "count": "99109"}, {"name": "Java", "year": "2019", "quarter": "4", "count": "99292"}, {"name": "Java", "year": "2020", "quarter": "1", "count": "105526"}, {"name": "Java", "year": "2020", "quarter": "2", "count": "111081"}, {"name": "Java", "year": "2020", "quarter": "3", "count": "105751"}, {"name": "Java", "year": "2020", "quarter": "4", "count": "100907"}, {"name": "Java", "year": "2021", "quarter": "1", "count": "97201"}, {"name": "Java", "year": "2021", "quarter": "2", "count": "92847"}, {"name": "Java", "year": "2021", "quarter": "3", "count": "82469"}, {"name": "Java", "year": "2021", "quarter": "4", "count": "65093"}, {"name": "Java", "year": "2022", "quarter": "1", "count": "90274"}, {"name": "Java", "year": "2022", "quarter": "2", "count": "81720"}, {"name": "Java", "year": "2022", "quarter": "3", "count": "80830"}, {"name": "Java", "year": "2022", "quarter": "4", "count": "78454"}, {"name": "Java", "year": "2023", "quarter": "1", "count": "83885"}]
+[
+    {
+        "name": "Java",
+        "year": "2012",
+        "quarter": "2",
+        "count": "7470"
+    },
+    {
+        "name": "Java",
+        "year": "2012",
+        "quarter": "3",
+        "count": "8966"
+    },
+    {
+        "name": "Java",
+        "year": "2012",
+        "quarter": "4",
+        "count": "11616"
+    },
+    {
+        "name": "Java",
+        "year": "2013",
+        "quarter": "1",
+        "count": "17892"
+    },
+    {
+        "name": "Java",
+        "year": "2013",
+        "quarter": "2",
+        "count": "18723"
+    },
+    {
+        "name": "Java",
+        "year": "2013",
+        "quarter": "3",
+        "count": "22997"
+    },
+    {
+        "name": "Java",
+        "year": "2013",
+        "quarter": "4",
+        "count": "30341"
+    },
+    {
+        "name": "Java",
+        "year": "2014",
+        "quarter": "1",
+        "count": "36813"
+    },
+    {
+        "name": "Java",
+        "year": "2014",
+        "quarter": "2",
+        "count": "44287"
+    },
+    {
+        "name": "Java",
+        "year": "2014",
+        "quarter": "3",
+        "count": "50281"
+    },
+    {
+        "name": "Java",
+        "year": "2014",
+        "quarter": "4",
+        "count": "58614"
+    },
+    {
+        "name": "Java",
+        "year": "2015",
+        "quarter": "1",
+        "count": "82070"
+    },
+    {
+        "name": "Java",
+        "year": "2015",
+        "quarter": "2",
+        "count": "102051"
+    },
+    {
+        "name": "Java",
+        "year": "2015",
+        "quarter": "3",
+        "count": "110575"
+    },
+    {
+        "name": "Java",
+        "year": "2015",
+        "quarter": "4",
+        "count": "125231"
+    },
+    {
+        "name": "Java",
+        "year": "2016",
+        "quarter": "1",
+        "count": "142492"
+    },
+    {
+        "name": "Java",
+        "year": "2016",
+        "quarter": "2",
+        "count": "147825"
+    },
+    {
+        "name": "Java",
+        "year": "2016",
+        "quarter": "3",
+        "count": "134356"
+    },
+    {
+        "name": "Java",
+        "year": "2016",
+        "quarter": "4",
+        "count": "151448"
+    },
+    {
+        "name": "Java",
+        "year": "2017",
+        "quarter": "1",
+        "count": "163323"
+    },
+    {
+        "name": "Java",
+        "year": "2017",
+        "quarter": "2",
+        "count": "162469"
+    },
+    {
+        "name": "Java",
+        "year": "2017",
+        "quarter": "3",
+        "count": "144980"
+    },
+    {
+        "name": "Java",
+        "year": "2017",
+        "quarter": "4",
+        "count": "146973"
+    },
+    {
+        "name": "Java",
+        "year": "2018",
+        "quarter": "1",
+        "count": "120206"
+    },
+    {
+        "name": "Java",
+        "year": "2018",
+        "quarter": "2",
+        "count": "97052"
+    },
+    {
+        "name": "Java",
+        "year": "2018",
+        "quarter": "3",
+        "count": "93971"
+    },
+    {
+        "name": "Java",
+        "year": "2018",
+        "quarter": "4",
+        "count": "91632"
+    },
+    {
+        "name": "Java",
+        "year": "2019",
+        "quarter": "1",
+        "count": "100654"
+    },
+    {
+        "name": "Java",
+        "year": "2019",
+        "quarter": "2",
+        "count": "103978"
+    },
+    {
+        "name": "Java",
+        "year": "2019",
+        "quarter": "3",
+        "count": "99109"
+    },
+    {
+        "name": "Java",
+        "year": "2019",
+        "quarter": "4",
+        "count": "99292"
+    },
+    {
+        "name": "Java",
+        "year": "2020",
+        "quarter": "1",
+        "count": "105526"
+    },
+    {
+        "name": "Java",
+        "year": "2020",
+        "quarter": "2",
+        "count": "111081"
+    },
+    {
+        "name": "Java",
+        "year": "2020",
+        "quarter": "3",
+        "count": "105751"
+    },
+    {
+        "name": "Java",
+        "year": "2020",
+        "quarter": "4",
+        "count": "100907"
+    },
+    {
+        "name": "Java",
+        "year": "2021",
+        "quarter": "1",
+        "count": "97201"
+    },
+    {
+        "name": "Java",
+        "year": "2021",
+        "quarter": "2",
+        "count": "92847"
+    },
+    {
+        "name": "Java",
+        "year": "2021",
+        "quarter": "3",
+        "count": "82469"
+    },
+    {
+        "name": "Java",
+        "year": "2021",
+        "quarter": "4",
+        "count": "65093"
+    },
+    {
+        "name": "Java",
+        "year": "2022",
+        "quarter": "1",
+        "count": "90274"
+    },
+    {
+        "name": "Java",
+        "year": "2022",
+        "quarter": "2",
+        "count": "81720"
+    },
+    {
+        "name": "Java",
+        "year": "2022",
+        "quarter": "3",
+        "count": "80830"
+    },
+    {
+        "name": "Java",
+        "year": "2022",
+        "quarter": "4",
+        "count": "78454"
+    },
+    {
+        "name": "Java",
+        "year": "2023",
+        "quarter": "1",
+        "count": "83885"
+    }
+]
